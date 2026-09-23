@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>فروشگاه VPN</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <svg class="logo-mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7B61FF" />
+            <stop offset="1" stop-color="#29E5A6" />
+          </linearGradient>
+        </defs>
+        <path d="M21 3 L36 9 V19 C36 29 30 35.5 21 39 C12 35.5 6 29 6 19 V9 Z" fill="url(#logoGrad)" />
+        <path d="M14 21 L19 26 L29 15" stroke="#0A0E1A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div>
+        <h1>فروشگاه VPN</h1>
+        <p>اتصال امن، بدون قطعی</p>
+      </div>
+    </header>
+
+    <!-- Plans screen -->
+    <section class="screen active" data-screen="plans">
+      <div class="status-hero">
+        <div class="status-row">
+          <span class="pulse-dot"></span>
+          <span>سرورها فعال و آنلاین</span>
+        </div>
+        <p class="status-headline">اینترنت بدون مرز، همین الان وصل شو.</p>
+        <div class="status-stats">
+          <div class="stat">
+            <b id="stat-users">۰</b>
+            <span>کاربر فعال</span>
+          </div>
+          <div class="stat">
+            <b id="stat-servers">۰</b>
+            <span>سرور در ۶ کشور</span>
+          </div>
+          <div class="stat">
+            <b>۹۹.۹٪</b>
+            <span>آپ‌تایم</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="urgency-banner">
+        <span class="label">🔥 ۲۰٪ تخفیف پلن‌های نامحدود</span>
+        <span class="countdown" id="countdown">24:00:00</span>
+      </div>
+
+      <div class="section-title">پلن مورد نظرتون رو انتخاب کنید</div>
+      <div id="plans-list"></div>
+
+      <div class="trust-strip">
+        <span class="trust-chip">🔒 بدون لاگ</span>
+        <span class="trust-chip">⚡ پینگ پایین</span>
+        <span class="trust-chip">💳 پرداخت امن</span>
+        <span class="trust-chip">🕐 پشتیبانی ۲۴/۷</span>
+      </div>
+    </section>
+
+    <!-- Account screen -->
+    <section class="screen" data-screen="account">
+      <div class="section-title">حساب من</div>
+      <div class="member-card">
+        <div class="mc-top">
+          <span>کارت عضویت</span>
+          <span>VPN CLUB</span>
+        </div>
+        <div class="mc-status">وضعیت سرویس شما</div>
+        <p class="mc-hint">
+          برای دیدن سرویس‌های فعال، تاریخ انقضا و لینک اشتراک، روی دکمه پایین
+          صفحه بزن تا اطلاعات همین الان در چت ربات برات ارسال بشه.
+        </p>
+      </div>
+      <div class="info-card">
+        هنوز عضو نشدی؟ از تب «خرید سرویس» یک پلن انتخاب کن؛ بعد از تایید رسید،
+        سرویس‌ت همین‌جا نمایش داده می‌شه.
+      </div>
+    </section>
+
+    <!-- Support screen -->
+    <section class="screen" data-screen="support">
+      <div class="section-title">پشتیبانی</div>
+      <div class="info-card">
+        اگر سوالی دارید یا مشکلی پیش اومده، از دکمه زیر با پشتیبانی در ارتباط باشید.
+      </div>
+      <a id="support-link" class="action-btn support-link" href="https://t.me/milad1i">
+        💬 باز کردن گفتگو با پشتیبانی
+      </a>
+      <p class="support-meta">میانگین زمان پاسخ‌گویی: کمتر از ۱۵ دقیقه</p>
+    </section>
+  </div>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-target="plans">
+      <span class="icon">🛒</span>
+      <span>خرید سرویس</span>
+    </button>
+    <button class="tab-btn" data-target="account">
+      <span class="icon">👤</span>
+      <span>حساب من</span>
+    </button>
+    <button class="tab-btn" data-target="support">
+      <span class="icon">🆘</span>
+      <span>پشتیبانی</span>
+    </button>
+  </nav>
+
+  <script src="plans.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
