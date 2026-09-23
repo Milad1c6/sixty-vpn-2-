@@ -7,11 +7,11 @@ window.VPN_PLANS = [
     "title": "۱ ماهه - ۳۰ گیگ",
     "days": 30,
     "gb": 30,
-    "price_toman": 90000
+    "price_toman": 240000
   },
   {
     "id": "p2",
-    "title": "۱ ماهه - نامحدود",
+    "title": "1 ماهه - نامحدود",
     "days": 30,
     "gb": 0,
     "price_toman": 150000,
@@ -19,17 +19,17 @@ window.VPN_PLANS = [
   },
   {
     "id": "p3",
-    "title": "۳ ماهه - ۱۰۰ گیگ",
-    "days": 90,
+    "title": "2 ماهه - ۱۰۰ گیگ",
+    "days": 60,
     "gb": 100,
-    "price_toman": 240000
+    "price_toman": 800000
   },
   {
     "id": "p4",
     "title": "۳ ماهه - نامحدود",
     "days": 90,
     "gb": 0,
-    "price_toman": 400000,
+    "price_toman": 380000,
     "badge": "بهترین ارزش"
   }
-];
+]
